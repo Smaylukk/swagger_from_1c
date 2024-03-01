@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="contentType" id="4">
+			<DataPath>Объект.contentType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="contentTypeКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="contentTypeРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="style" id="7">
+			<DataPath>Объект.style</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="styleКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="styleРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="38">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<CheckBoxField name="explode" id="10">
+					<DataPath>Объект.explode</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="explodeКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="explodeРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="allowReserved" id="13">
+					<DataPath>Объект.allowReserved</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="allowReservedКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="allowReservedРасширеннаяПодсказка" id="15"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="headers" id="16">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.headers</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="headersКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="headersКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="headersРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="headersСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>headers</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="headersСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="headersСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="headersСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>headers</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="headersСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="headersСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="headersУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>headers</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="headersУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="headersУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="headersНомерСтроки" id="29">
+					<DataPath>Объект.headers.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="headersНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="headersНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="headerskey" id="32">
+					<DataPath>Объект.headers.key</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="headerskeyКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="headerskeyРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="headersheader" id="35">
+					<DataPath>Объект.headers.header</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="headersheaderКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="headersheaderРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Кодировки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

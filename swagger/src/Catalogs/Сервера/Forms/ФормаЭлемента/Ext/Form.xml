@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<LabelField name="uid" id="7">
+			<DataPath>1/0:baba6df3-9b48-40d2-b6e4-c61c1dcbe931</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="uidКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="uidРасширеннаяПодсказка" id="9"/>
+		</LabelField>
+		<InputField name="Владелец" id="41">
+			<DataPath>1/-5</DataPath>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<InputField name="url" id="10">
+			<DataPath>Объект.url</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="urlКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="urlРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="descriptionServer" id="13">
+			<DataPath>Объект._description</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="descriptionServerКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="descriptionServerРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Table name="variables" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.variables</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="variablesКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="variablesКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="variablesРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="variablesСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>variables</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="variablesСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="variablesСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="variablesСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>variables</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="variablesСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="variablesСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="variablesУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>variables</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="variablesУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="variablesУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="variablesНомерСтроки" id="29">
+					<DataPath>Объект.variables.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="variablesНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="variablesНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="variableskey" id="44">
+					<DataPath>Объект.variables.key</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="variableskeyКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="variableskeyРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="variablesenum" id="32">
+					<DataPath>Объект.variables.enum</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="variablesenumКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="variablesenumРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="StartChoice">variablesenumНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="variablesdescription" id="35">
+					<DataPath>Объект.variables._description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="variablesdescriptionКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="variablesdescriptionРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="variablesdefault" id="38">
+					<DataPath>Объект.variables.default</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="variablesdefaultКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="variablesdefaultРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сервера</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

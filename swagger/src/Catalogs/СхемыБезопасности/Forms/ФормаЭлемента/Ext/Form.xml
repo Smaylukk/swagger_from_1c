@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="45">
+			<DataPath>Объект.Parent</DataPath>
+			<ContextMenu name="РодительКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<InputField name="type" id="48">
+			<DataPath>Объект.type</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ListChoiceMode>true</ListChoiceMode>
+			<TextEdit>false</TextEdit>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">apiKey</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">http</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">mutualTLS</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">oauth2</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">openIdConnect</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="typeКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="typeРасширеннаяПодсказка" id="50"/>
+		</InputField>
+		<InputField name="_description" id="10">
+			<DataPath>Объект._description</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="_descriptionКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="_descriptionРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="name" id="7">
+			<DataPath>Объект.name</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="nameКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="nameРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="in" id="13">
+			<DataPath>Объект._in</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<ListChoiceMode>true</ListChoiceMode>
+			<TextEdit>false</TextEdit>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>query</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">query</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>header</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">header</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>path</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">path</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>cookie</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">cookie</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="inКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="inРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="bearerFormat" id="51">
+			<DataPath>Объект.bearerFormat</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="bearerFormatКонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="bearerFormatРасширеннаяПодсказка" id="53"/>
+		</InputField>
+		<InputField name="schema" id="34">
+			<DataPath>Объект.scheme</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="schemaКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="schemaРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="example" id="37">
+			<DataPath>Объект.flows</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="exampleКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="exampleРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="content" id="40">
+			<DataPath>Объект.openIdConnectUrl</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>false</MultiLine>
+			<ContextMenu name="contentКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="contentРасширеннаяПодсказка" id="42"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СхемыБезопасности</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

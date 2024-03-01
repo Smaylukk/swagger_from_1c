@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="4">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="operationRef" id="7">
+			<DataPath>Объект.operationRef</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="operationRefКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="operationRefРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="operationId" id="10">
+			<DataPath>Объект.operationId</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="operationIdКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="operationIdРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="requestBody" id="13">
+			<DataPath>Объект.requestBody</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="requestBodyКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="requestBodyРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="_description" id="16">
+			<DataPath>Объект._description</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="_descriptionКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="_descriptionРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="server" id="19">
+			<DataPath>Объект.server</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="serverКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="serverРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Table name="parameters" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.parameters</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="parametersКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="parametersКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="parametersРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="parametersСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>parameters</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="parametersСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="parametersСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="parametersСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>parameters</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="parametersСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="parametersСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="parametersУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>parameters</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="parametersУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="parametersУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="parametersНомерСтроки" id="35">
+					<DataPath>Объект.parameters.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="parametersНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="parametersНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="parameterskey" id="38">
+					<DataPath>Объект.parameters.key</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="parameterskeyКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="parameterskeyРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="parametersvalue" id="41">
+					<DataPath>Объект.parameters.value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="parametersvalueКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="parametersvalueРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Линки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

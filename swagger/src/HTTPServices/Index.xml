@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<HTTPService uuid="fd8f16df-3418-4674-8bc4-6743b6eccd93">
+		<Properties>
+			<Name>Index</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Index</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>index</RootURL>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>5</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="cb11ce1f-cab9-4cde-b1c4-650ab5a9c1a9">
+				<Properties>
+					<Name>НачальнаяСтраница</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальная страница</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/*</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="0fc4e352-b91c-4ba6-918c-e466a8eafa5c">
+						<Properties>
+							<Name>Get</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>НачальнаяСтраницаGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="6e4c08e9-b5c8-4c2f-b696-d380a37bf478">
+				<Properties>
+					<Name>API</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>API</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/api</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="714e9005-2bf7-48dc-8000-611e7ea6e668">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>APIPOST</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="2d3c3ade-d715-420a-a93d-5750716f91c5">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>APIGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="38988b97-3e69-4b1a-b1ed-4d4b06c88d4c">
+				<Properties>
+					<Name>Сервис</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/service/{ИмяСервиса}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="890e343f-a589-4dcf-b64d-2912aa2b4844">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>СервисGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="a5b4625b-a8a8-4351-a16b-27a7c91ba9b4">
+				<Properties>
+					<Name>СписокСервисов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список сервисов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/serviceList</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b2ae83ea-a3b6-40b0-a668-9f7f9c5042e8">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>СписокСервисовGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

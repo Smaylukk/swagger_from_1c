@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="_description" id="4">
+			<DataPath>Объект._description</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="_descriptionКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="_descriptionРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<CheckBoxField name="required" id="10">
+			<DataPath>Объект.required</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="requiredКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="requiredРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<Table name="content" id="13">
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.content</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="contentКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="contentКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="contentРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="contentСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>content</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="contentСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="contentСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="contentСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>content</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="contentСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="contentСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="contentУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>content</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="contentУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="contentУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="content1НомерСтроки" id="26">
+					<DataPath>Объект.content.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="content1НомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="content1НомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="content1key" id="29">
+					<DataPath>Объект.content.key</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="content1keyКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="content1keyРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="content1mediaType" id="32">
+					<DataPath>Объект.content.mediaType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="content1mediaTypeКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="content1mediaTypeРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТелоЗапросов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

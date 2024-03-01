@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="4">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="pathItems" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.pathItems</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="pathItemsКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="pathItemsКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="pathItemsРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="pathItemsСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>pathItems</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="pathItemsСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="pathItemsСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="pathItemsСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>pathItems</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="pathItemsСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="pathItemsСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="pathItemsУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>pathItems</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="pathItemsУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="pathItemsУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="pathItemsНомерСтроки" id="20">
+					<DataPath>Объект.pathItems.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="pathItemsНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="pathItemsНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="pathItemsexpression" id="23">
+					<DataPath>Объект.pathItems.expression</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="pathItemsexpressionКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="pathItemsexpressionРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="pathItemspath" id="26">
+					<DataPath>Объект.pathItems.path</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ContextMenu name="pathItemspathКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="pathItemspathРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбратныеВызовы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
