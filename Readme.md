@@ -5,7 +5,7 @@
 -   Описати OpenAPI специфікацію конкретного API
 -   Опублікувати Swagger UI за допомогою підсистеми Web1C
 
-![Swagger from 1C example](docs\SwaggerFrom1C.jpg 'Swagger from 1C example')
+![Swagger from 1C example](/docs/SwaggerFrom1C.jpg 'Swagger from 1C example')
 
 Тепер ви можете зібрати в одному місці API, як ерозроблене вами, так і стороннє API, яке використовуєте під час інтеграцій.
 
@@ -16,21 +16,21 @@
 ### 1. Зовнішнє посилання
 
 Можна вказати УРЛ на опис потрібного API. Єдине що може піти не так - це проблема CORS. Тут вже все залежить від постачальника АПІ.
-![Service URL](docs\ServiceURL.jpg 'Service URL')
+![Service URL](/docs/ServiceURL.jpg 'Service URL')
 
 ### 2. Текстовий опис
 
 Ну тут все просто - редагуйте опис публікації в будь-якому редакторі і вставляйте.
-![Service text](docs\ServiceText.jpg 'Service text')
+![Service text](/docs/ServiceText.jpg 'Service text')
 
 ### 3. Об'єктна специфікація
 
 Всі об'єкти ОпенАПІ специфікації перенесені у відповідні довідники. У файлах є демо-набір, який можна завантажити обробкою "Вигрузка і загрузка даних XML"
-![Service object](docs\ServiceObject.jpg 'Service object')
+![Service object](/docs/ServiceObject.jpg 'Service object')
 
 ### Завантаження демо
 
-За допомогою "Swagger -> Выгрузка и загрузка данных XML" завантажити файл "ExtFiles\service_upload.xml"
+За допомогою "Swagger -> Выгрузка и загрузка данных XML" завантажити файл "ExtFiles/service_upload.xml"
 
 ## Web 1C
 
