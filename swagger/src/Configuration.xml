@@ -436,6 +436,7 @@
 			<Role>ЧтениеВнешнихПользователей</Role>
 			<Role>ЧтениеИнформацииОВерсияхОбъектов</Role>
 			<Role>swagger</Role>
+			<Role>html</Role>
 			<CommonTemplate>ПолучениеДереваОбработчиковОбновления</CommonTemplate>
 			<CommonTemplate>monaco</CommonTemplate>
 			<CommonModule>АдминистрированиеКластераCOMКлиентСервер</CommonModule>

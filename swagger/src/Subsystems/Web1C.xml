@@ -60,6 +60,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РедакторКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.Домен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ШрифтAwesome</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.html</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
